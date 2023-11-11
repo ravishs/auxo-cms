@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "founders",
+  "info": {
+    "singularName": "founder",
+    "pluralName": "founders",
+    "displayName": "founder"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "leadership": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::leadership.leadership",
+      "inversedBy": "founders"
+    }
+  }
+}

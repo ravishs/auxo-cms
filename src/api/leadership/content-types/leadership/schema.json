@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaderships",
+  "info": {
+    "singularName": "leadership",
+    "pluralName": "leaderships",
+    "displayName": "leadership",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "founders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::founder.founder",
+      "mappedBy": "leadership"
+    }
+  }
+}
