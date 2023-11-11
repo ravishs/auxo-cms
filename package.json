@@ -1,0 +1,36 @@
+{
+  "name": "auxo-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.15.2",
+    "@strapi/plugin-i18n": "4.15.2",
+    "@strapi/plugin-users-permissions": "4.15.2",
+    "@strapi/provider-upload-cloudinary": "^4.15.2",
+    "@strapi/strapi": "4.15.2",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "5ce2530e-041c-4e0d-8c69-f7f15cdb770c"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
